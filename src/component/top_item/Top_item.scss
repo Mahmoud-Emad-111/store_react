@@ -1,0 +1,149 @@
+.top_item{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: capitalize;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .all{
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: rgb(105, 105, 105);
+            span{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            
+        }
+        .title{
+            display: flex ;
+            align-items: center;
+            svg{
+                padding: 0;
+                margin: 0;
+                font-size: 40px;
+                color: #e94560;
+            }
+            h2{
+                font-size: 30px;
+                margin-left: 15px;
+            }
+    
+        }
+    
+    }
+    .main_top{
+        
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px !important;
+        .cart{
+            width: 225;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+    }
+    button{
+        display: none !important;
+    }
+}
+@media (max-width:797px) {
+    .top_item{
+        .title{
+            h2{
+                font-size: 25px !important;
+            }
+            svg{
+                font-size: 30px !important;
+            }
+        }
+        .all{
+            span{
+                font-size: 15px !important;
+            }
+            svg{
+                font-size: 13px !important;
+            }
+        }
+    }
+}
+@media (max-width:645px) {
+    .top_item{
+        .title{
+            h2{
+                font-size: 20px !important;
+            }
+            svg{
+                font-size: 20px !important;
+            }
+            .all{
+                span{
+                    font-size: 12px !important;
+                }
+                svg{
+                    font-size: 10px !important;
+                }
+            }
+        }
+
+        .cart{
+            max-width: 120px !important;
+            padding: 15px !important;
+        }
+    }
+}
+
+@media (max-width:562px){
+    .top_item{
+        .title{
+            h2{
+                font-size: 15px !important;
+            }
+            svg{
+                font-size: 15px !important;
+            }
+
+
+        }
+        .all{
+            span{
+                font-size: 10px !important;
+            }
+            svg{
+                font-size: 8px !important;
+            }
+        }
+        
+        .cart{
+            width: 80px !important;
+        }
+    }
+}
+@media (max-width:452px){
+    .top_item{
+        .cart{
+            padding: 10px !important;
+            width: 70px !important;
+        }
+    }
+}
+@media (max-width:386px){
+    .top_item{
+        .cart{
+            width: 60px !important;
+        }
+    }
+}

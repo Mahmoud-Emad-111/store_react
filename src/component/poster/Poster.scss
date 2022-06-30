@@ -1,0 +1,11 @@
+.poster{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .contener{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,334 @@
+.flash {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f6f9fc;
+}
+.flash .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.flash .title svg {
+  font-size: 20px;
+  color: #e94560;
+}
+.flash .carts .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.flash .carts .cart {
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.flash .carts .cart img {
+  width: 100%;
+  height: 100%;
+  max-width: 270px;
+  max-height: 200px;
+  z-index: 58;
+  position: relative;
+}
+.flash .carts .cart .detalis span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.flash .carts .cart .detalis .rate {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 5px;
+}
+.flash .carts .cart .detalis .rate svg {
+  margin-top: 3px;
+  color: gold;
+}
+.flash .carts .cart .detalis .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flash .carts .cart .detalis .price button {
+  height: 30px;
+  width: 34px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.flash .carts .cart .detalis .price button svg {
+  vertical-align: middle;
+  color: #e94560;
+  font-size: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.flash .carts .cart .detalis .price button:hover {
+  background-color: #e94560;
+  border: none;
+}
+.flash .carts .cart .detalis .price button:hover svg {
+  color: #fff;
+}
+.flash .carts .cart .desc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #e94560;
+  font-size: 20px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 0px;
+}
+.flash .carts .next {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border: none;
+  background-color: #0f3460;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+.flash .carts .next svg {
+  vertical-align: middle;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+}
+.flash .carts .perv {
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  top: 50%;
+  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  -o-transform: translate(50%, -50%);
+  border: none;
+  background-color: #0f3460;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+.flash .carts .perv svg {
+  vertical-align: middle;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+}
+
+@media (max-width: 901px) {
+  .flash .next, .flash .perv {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .flash .next svg, .flash .perv svg {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 778px) {
+  .flash .cart .desc {
+    font-size: 15px !important;
+  }
+  .flash .cart .detalis .name {
+    font-size: 15px !important;
+  }
+  .flash .cart .price button {
+    width: 30px !important;
+    height: 29px !important;
+  }
+  .flash .cart .price button svg {
+    transform: translateX(-12%);
+    -webkit-transform: translateX(-12%);
+    -moz-transform: translateX(-12%);
+    -ms-transform: translateX(-12%);
+    -o-transform: translateX(-12%);
+  }
+  .flash .cart .price span {
+    font-size: 17px !important;
+  }
+  .flash .cart .rate svg {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 654px) {
+  .flash .cart .desc {
+    font-size: 10px !important;
+  }
+  .flash .cart .detalis .name {
+    font-size: 10px !important;
+  }
+  .flash .cart .price button {
+    width: 24px !important;
+    height: 22px !important;
+  }
+  .flash .cart .price button svg {
+    font-size: 12px !important;
+    transform: translate(-12%, -12%);
+    -webkit-transform: translate(-12%, -12%);
+    -moz-transform: translate(-12%, -12%);
+    -ms-transform: translate(-12%, -12%);
+    -o-transform: translate(-12%, -12%);
+  }
+  .flash .cart .price span {
+    font-size: 13px !important;
+  }
+  .flash .cart .rate {
+    gap: 2px !important;
+  }
+  .flash .cart .rate svg {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 550px) {
+  .flash .cart {
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
+  .flash .cart .desc {
+    font-size: 7px !important;
+    top: -10px;
+  }
+  .flash .cart .detalis .name {
+    font-size: 7px !important;
+  }
+  .flash .cart .price button {
+    width: 20px !important;
+    height: 18px !important;
+  }
+  .flash .cart .price button svg {
+    font-size: 10px !important;
+    transform: translate(-19%, -35%);
+    -webkit-transform: translate(-19%, -35%);
+    -moz-transform: translate(-19%, -35%);
+    -ms-transform: translate(-19%, -35%);
+    -o-transform: translate(-19%, -35%);
+  }
+  .flash .cart .price span {
+    font-size: 9px !important;
+  }
+  .flash .cart .rate {
+    gap: 2px !important;
+  }
+  .flash .cart .rate svg {
+    font-size: 8px !important;
+  }
+
+  .next, .perv {
+    max-width: 25px !important;
+    max-height: 25px !important;
+  }
+  .next svg, .perv svg {
+    width: 15px !important;
+    transform: translateY(-30%) !important;
+    -webkit-transform: translateY(-30%) !important;
+    -moz-transform: translateY(-30%) !important;
+    -ms-transform: translateY(-30%) !important;
+    -o-transform: translateY(-30%) !important;
+  }
+}
+@media (max-width: 409px) {
+  .flash .cart {
+    padding: 10px !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
+  .flash .cart .desc {
+    font-size: 4px !important;
+  }
+  .flash .cart .detalis .name {
+    font-size: 5px !important;
+  }
+  .flash .cart .price button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    -o-border-radius: 2px !important;
+  }
+  .flash .cart .price button svg {
+    font-size: 10px !important;
+    transform: translate(-50%, -70%) !important;
+    -webkit-transform: translate(-50%, -70%) !important;
+    -moz-transform: translate(-50%, -70%) !important;
+    -ms-transform: translate(-50%, -70%) !important;
+    -o-transform: translate(-50%, -70%) !important;
+  }
+  .flash .cart .price span {
+    font-size: 5px !important;
+  }
+  .flash .cart .rate {
+    gap: 2px !important;
+  }
+  .flash .cart .rate svg {
+    font-size: 8px !important;
+  }
+
+  .next, .perv {
+    max-width: 20px !important;
+    max-height: 20px !important;
+    text-align: center !important;
+  }
+  .next svg, .perv svg {
+    width: 10px !important;
+    transform: translateY(-50%) !important;
+    -webkit-transform: translateY(-50%) !important;
+    -moz-transform: translateY(-50%) !important;
+    -ms-transform: translateY(-50%) !important;
+    -o-transform: translateY(-50%) !important;
+  }
+}/*# sourceMappingURL=flash.css.map */

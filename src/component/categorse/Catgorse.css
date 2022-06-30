@@ -1,0 +1,82 @@
+.catgorse {
+  margin-top: 20px;
+  width: 165px;
+  width: 23%;
+  box-shadow: rgba(43, 52, 69, 0.1) 0px 4px 16px;
+  cursor: pointer;
+}
+.catgorse .item {
+  padding: 10px 10px;
+}
+.catgorse .item img {
+  width: 30px;
+  height: 30px;
+}
+.catgorse .item span {
+  margin-left: 20px;
+}
+.catgorse .item:hover {
+  background-color: rgba(233, 69, 96, 0.368627451);
+}
+
+@media (max-width: 926px) {
+  .catgorse {
+    width: 190px;
+  }
+
+  .item {
+    padding: 5px !important;
+    font-size: 15px;
+  }
+  .item img {
+    width: 25px;
+    height: 25px;
+  }
+  .item span {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 601px) {
+  .catgorse .item img {
+    width: 20px;
+    height: 20px;
+  }
+  .catgorse .item span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 851px) {
+  .catgorse .item span {
+    font-size: 13px;
+  }
+  .catgorse .item img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 611px) {
+  .catgorse {
+    width: 150px !important;
+  }
+  .catgorse .item span {
+    font-size: 10px;
+    margin-left: 10px !important;
+  }
+  .catgorse .item img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .catgorse {
+    width: 110px !important;
+  }
+  .catgorse .item span {
+    font-size: 8px;
+    margin-left: 8px !important;
+  }
+  .catgorse .item img {
+    width: 15px;
+    height: 15px;
+  }
+}/*# sourceMappingURL=Catgorse.css.map */

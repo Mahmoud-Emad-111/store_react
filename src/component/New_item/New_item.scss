@@ -1,0 +1,204 @@
+.new_item{
+    padding-bottom: 50px;
+    text-transform:capitalize;
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 60px ;
+                
+            }
+            h2{
+                font-size: 30px;
+            }
+        }
+        .right{
+            @extend .left;
+            gap: 5px;
+            span{
+                font-size: 19px;
+                color: #e94560;
+                font-weight:500;
+            }
+            svg{
+                color:rgb(105, 105, 105);
+                
+            }
+        }
+    }
+    .main{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 30px;
+        background-color: #fff;
+        padding: 10px;
+        width: 100%;
+        
+        .box{
+            
+            img{
+                max-width: 150px;
+                max-height: 150px;
+                width: 100%;
+                height: 100%;
+                
+            }
+            .price{
+                h3{
+                    padding: 0;
+                    text-align: center;
+
+                }
+                span{
+                    margin: 0;
+                    padding: 0;
+                    color: #e94560;
+                    font-size: 20px;
+                }
+            }
+        }
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+}
+////////////////////////////////////////////
+@media (max-width:943px) {
+    .new_item{
+        .box{
+            .price{
+                h3{
+                    font-size: 15px;
+                }
+                span{
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+
+
+        .head{
+            h2{
+                font-size: 25px !important;
+            }
+            img{
+                width: 45px !important;
+            }
+            span{
+                font-size: 15px !important;
+            }
+            svg{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width:792px) {
+    .new_item{
+        .box{
+            .price{
+                h3{
+                    font-size: 10px;
+                }
+                span{
+                    font-size: 10px !important;
+                }
+            }
+        }
+        .main{
+
+           width: 98% !important;
+        }
+    }
+}
+//////////////////////////////
+@media (max-width:600px) {
+    .new_item{
+        .box{
+            .price{
+                h3{
+                    font-size: 8px;
+                    margin: 0;
+                }
+                span{
+                    font-size: 8px !important;
+                }
+            }
+        }
+        .head{
+            h2{
+                font-size: 18px !important;
+            }
+            img{
+                width: 30px !important;
+            }
+            span{
+                font-size: 12px !important;
+            }
+            svg{
+                font-size: 10px;
+            }
+        }
+
+    }
+}
+/////////////////////////////////////}
+@media (max-width:517px) {
+.new_item{
+    .box{
+        .price{
+            h3{
+                font-size: 6px;
+                margin: 0;
+            }
+            span{
+                
+                font-size: 5px !important;
+            }
+        }
+    }
+
+}
+}
+@media (max-width:411px) {
+    .new_item{
+        .box{
+            .price{
+                h3{
+                    font-size: 5px;
+                    margin: 0;
+                }
+                span{
+                    
+                    font-size: 4px !important;
+                }
+            }
+        }
+        .main{
+            width: 96% !important;
+            gap: 25px !important;
+        }
+        .head{
+            h2{
+                font-size: 15px !important;
+            }
+            img{
+                width: 25px !important;
+            }
+            span{
+                font-size: 10px !important;
+            }
+            svg{
+                font-size: 8px;
+            }
+        }
+    }
+}

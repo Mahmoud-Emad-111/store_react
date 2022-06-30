@@ -1,0 +1,11 @@
+.poster {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.poster .contener {
+  display: flex;
+  justify-content: space-between;
+}
+.poster .contener img {
+  width: 100%;
+}/*# sourceMappingURL=Poster.css.map */

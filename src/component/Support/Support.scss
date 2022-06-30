@@ -1,0 +1,41 @@
+.support{
+    padding-top:50px;
+    padding-bottom: 50px;
+    .main_support{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 40px;
+        .box{
+            padding: 10px;
+            background-color: #fff;
+            .icone{
+                margin: 5px;
+                padding: 5px;
+                text-align: center;
+                SVG{
+                    font-size: 50px;
+                    padding: 10px;
+                    background-color: rgb(211, 211, 211);
+                    line-height: 70px;
+                    border-radius:50% ;
+                    -webkit-border-radius:50% ;
+                    -moz-border-radius:50% ;
+                    -ms-border-radius:50% ;
+                    -o-border-radius:50% ;
+                }
+            
+            }
+            .detalis{
+                color: gray;
+               font-size: 17px;
+            }
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+}
+
+    }
+}
+/////////////////////////////////////

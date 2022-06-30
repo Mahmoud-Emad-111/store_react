@@ -1,0 +1,38 @@
+.support {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.support .main_support {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 40px;
+}
+.support .main_support .box {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.support .main_support .box .icone {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.support .main_support .box .icone SVG {
+  font-size: 50px;
+  padding: 10px;
+  background-color: rgb(211, 211, 211);
+  line-height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.support .main_support .box .detalis {
+  color: gray;
+  font-size: 17px;
+}/*# sourceMappingURL=Support.css.map */
